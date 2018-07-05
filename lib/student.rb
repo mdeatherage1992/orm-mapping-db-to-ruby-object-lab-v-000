@@ -76,7 +76,7 @@ class Student
       ORDER BY students.id
       LIMIT 1 desc
     SQL
-    DB[:conn].execute(sql,num).map do |row|
+    DB[:conn].execute(sql).map do |row|
       self.new_from_db(row)
     end
   end
