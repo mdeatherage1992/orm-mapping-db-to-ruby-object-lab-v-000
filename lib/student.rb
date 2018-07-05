@@ -44,7 +44,7 @@ class Student
     end
   end
 
-  
+
 
 
 
