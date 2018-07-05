@@ -60,7 +60,7 @@ class Student
       SELECT *
       FROM students
       WHERE grade = 10
-      LIMIT x
+      LIMIT x desc
     SQL
     DB[:conn].execute(sql).map do |row|
       self.new_from_db(row)
