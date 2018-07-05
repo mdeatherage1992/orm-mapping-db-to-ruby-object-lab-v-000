@@ -40,7 +40,7 @@ class Student
       WHERE grade = 9
     SQL
 
-    DB[:conn].execute(sql, name).map do |row|
+    DB[:conn].execute(sql, grade).map do |row|
       row
     end
   end
